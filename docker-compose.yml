@@ -1,0 +1,10 @@
+version: "4.2"
+
+services:
+  app:
+    image: httpd:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./app:/var/www
+      
